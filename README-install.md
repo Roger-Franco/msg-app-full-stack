@@ -12,6 +12,4 @@ Obs: por que o comando acima deu erro, usei esse: npx sequelize-cli init
 
 
 
-https://www.youtube.com/watch?v=Hl7diL7SFw8&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL
-
-13:50 minutes
+https://www.youtube.com/watch?v=pJx-HGwaL3w&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=2
