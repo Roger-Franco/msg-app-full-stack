@@ -6,16 +6,19 @@ npm install nodemon
 npm install sequelize sequelize-cli
 
 sequelize init
-** zsh: command not found: sequelize
+zsh: command not found: sequelize
 Obs: por que o comando acima deu erro, usei esse: npx sequelize-cli init
 
 CLIENT:
 npx create-react-app .
 npm install axios
+npm install react-router-dom
+npm install formik 
+npm install yup
 
 
 
 
-https://www.youtube.com/watch?v=DO_wR1tx-O0&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=3
+https://www.youtube.com/watch?v=lxroBmTiOhI&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=4
 
-Time: 12:00
+Time: 02:30
