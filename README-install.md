@@ -4,6 +4,7 @@ npm install express cors mysql2
 node index.js (teste do servidor)
 npm install nodemon
 npm install sequelize sequelize-cli
+npm install bcrypt
 
 sequelize init
 zsh: command not found: sequelize
@@ -19,6 +20,6 @@ npm install yup
 
 
 
-https://www.youtube.com/watch?v=2Xr-WddT3Lo&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=7
+https://www.youtube.com/watch?v=OGGnjBE5qr0&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=8
 
-Time: 00:00
+Time: 21:30
