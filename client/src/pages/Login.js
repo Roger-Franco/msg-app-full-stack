@@ -9,10 +9,15 @@ function Login() {
     const data = { username: username, password: password }
     axios.post('http://localhost:8080/auth/login', data).then((response) => {
       console.log(response.data);
+      if (response.data.error) {
+        alert(response.data.error)
+      } else {
+        sessionStorage.setItem("accessToken", response.data)
+      }
     })
   }
   return (
-    <div>
+    <div className="loginContainer">
       <input onChange={(e) => setUsername(e.target.value)} type="text" />
       <input onChange={(e) => setPassword(e.target.value)} type="password" />
       <button onClick={login}>Login</button>

@@ -5,6 +5,7 @@ node index.js (teste do servidor)
 npm install nodemon
 npm install sequelize sequelize-cli
 npm install bcrypt
+npm install jsonwebtoken
 
 sequelize init
 zsh: command not found: sequelize
@@ -20,6 +21,6 @@ npm install yup
 
 
 
-https://www.youtube.com/watch?v=OGGnjBE5qr0&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=8
+https://www.youtube.com/watch?v=-UKPph5XU_c&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=9&ab_channel=PedroTech
 
-Time: 21:30
+Time: 20:00
