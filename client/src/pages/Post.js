@@ -31,7 +31,7 @@ function Post() {
         if (resp.data.error) {
           alert(resp.data.error)
         } else {
-          const commentToAdd = { commentBody: newComment }
+          const commentToAdd = { commentBody: newComment, username: resp.data.username }
           // console.log("Comment Added!!");
           setComments([...comments, commentToAdd])
           setNewComment("")
@@ -60,7 +60,12 @@ function Post() {
         </div>
         <div className="listOfComments">
           {comments.map((comment, key) => {
-            return <div key={key} className="comment">{comment.commentBody}</div>
+            return (
+              <div key={key} className="comment">
+                {comment.commentBody}
+                <label>Username: {comment.username}</label>
+              </div>
+            )
           })}
         </div>
       </div>
