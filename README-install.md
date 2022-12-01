@@ -23,4 +23,4 @@ npm install yup
 
 https://www.youtube.com/watch?v=gX3swJ1RHrs&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=12
 
-Time: 05:30
+Time: 18:00
