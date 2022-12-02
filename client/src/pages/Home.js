@@ -19,7 +19,6 @@ function Home() {
         }));
       })
   }, [])
-  console.log(likedPosts.filter((like) => like === 6), 'likedPosts.filter((like) => like === value.id)')
 
   const likeAPost = (postId) => {
     axios.post("http://localhost:8080/likes",
@@ -29,18 +28,23 @@ function Home() {
       setListOfPosts(listOfPosts.map((post) => {
         if (post.id === postId) {
           if (response.data.liked) {
-            return { ...post, Likes: [...post.Likes, 0], Liked: true }
-            // return { ...post, Likes: [...post.Likes, 0], Liked: true } => um caminho ...
+            return { ...post, Likes: [...post.Likes, 0] }
           } else {
             const likesArray = post.Likes
             likesArray.pop()
-            return { ...post, Likes: likesArray, Liked: false }
-            // return { ...post, Likes: likesArray, Liked: false } => um caminho para mudar a cor do Like
+            return { ...post, Likes: likesArray }
           }
         } else {
           return post
         }
       }))
+      if (likedPosts.includes(postId)) {
+        setLikedPosts(likedPosts.filter((id) => {
+          return id !== postId
+        }))
+      } else {
+        setLikedPosts([...likedPosts, postId])
+      }
     })
   }
 
@@ -57,10 +61,8 @@ function Home() {
               <div className="buttons">
                 <ThumbUpAltIcon
                   onClick={() => likeAPost(value.id)}
-                  // className={value.Liked ? "likeBttn" : "unlikeBttn"}
                   className={likedPosts.includes(value.id) ? "likeBttn" : "unlikeBttn"}
                 />
-                {/* <ThumbUpAltIcon onClick={() => likeAPost(value.id)} className="unlikeBttn" /> */}
                 <label>{value.Likes.length}</label>
               </div>
             </div>
