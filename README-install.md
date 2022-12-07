@@ -31,6 +31,6 @@ thuthu
 
 
 
-https://www.youtube.com/watch?v=lPaSDN8K64w&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=15&ab_channel=PedroTech
+https://www.youtube.com/watch?v=MX0dMeDF0Xg&list=PLpPqplz6dKxUaZ630TY1BFIo5nP-_x-nL&index=16
 
-Time: 18:30
+Time: 00:00
