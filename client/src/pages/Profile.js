@@ -1,12 +1,14 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { AuthContext } from '../helpers/AuthContext'
 
 function Profile() {
   let { id } = useParams()
   const [username, setUsername] = useState()
   const [listOfPosts, setListOfPosts] = useState()
   const navigate = useNavigate()
+  const { authState } = useContext(AuthContext)
 
   useEffect(() => {
     axios.get(`http://localhost:8080/auth/basicinfo/${id}`).then((response) => {
@@ -21,6 +23,12 @@ function Profile() {
     <div className="profilePageContainer">
       <div className="basicInfo">
         <h1>Username: {username}</h1>
+        {
+          authState.username === username &&
+          <button onClick={() => navigate('/changepassword')}>Change my password</button>
+        }
+      </div>
+      <div className="listOfPosts">
         {listOfPosts && listOfPosts.map((value, key) => {
           console.log(value);
           return (
